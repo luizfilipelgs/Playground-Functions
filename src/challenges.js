@@ -96,12 +96,46 @@ let teste8 = [2,15,7,9,45]
 
 // Desafio 9
 function encode(frase) {
- 
+  let fraseArr = frase.split("")
+    for (let i = 0; i < fraseArr.length; i += 1) {
+      if (fraseArr[i] ==="a") {
+        fraseArr[i] = "1"
+      } else if (fraseArr[i] ==="e") {
+        fraseArr[i] = "2"
+      } else if (fraseArr[i] ==="i") {
+        fraseArr[i] = "3"
+      } else if (fraseArr[i] ==="o") {
+        fraseArr[i] = "4"
+      } else if (fraseArr[i] ==="u") {
+        fraseArr[i] = "5"   
+    }  
+  }
+  return fraseArr.join("");
+}
 
+//let teste9 = "hello"
+//console.log(encode(teste9));
+
+function decode(fraseCod) {
+  let fraseCodArr = fraseCod.split("")
+    for (let i = 0; i < fraseCodArr.length; i += 1) {
+      if (fraseCodArr[i] ==="1") {
+        fraseCodArr[i] = "a"
+      } else if (fraseCodArr[i] ==="2") {
+        fraseCodArr[i] = "e"
+      } else if (fraseCodArr[i] ==="3") {
+        fraseCodArr[i] = "i"
+      } else if (fraseCodArr[i] ==="4") {
+        fraseCodArr[i] = "o"
+      } else if (fraseCodArr[i] ==="5") {
+        fraseCodArr[i] = "u"   
+    }  
+  }
+  return fraseCodArr.join("");
 }
-function decode() {
-  // seu código aqui
-}
+
+//let teste9b = "h2ll4"
+//console.log(decode(teste9b));
 
 // Desafio 10
 function techList() {
