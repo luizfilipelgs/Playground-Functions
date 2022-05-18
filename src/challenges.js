@@ -113,8 +113,6 @@ function encode(frase) {
   return fraseArr.join("");
 }
 
-//let teste9 = "hello"
-//console.log(encode(teste9));
 
 function decode(fraseCod) {
   let fraseCodArr = fraseCod.split("")
@@ -134,13 +132,32 @@ function decode(fraseCod) {
   return fraseCodArr.join("");
 }
 
-//let teste9b = "h2ll4"
-//console.log(decode(teste9b));
+
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(arrTech, nome) {
+  if (arrTech !="") {
+    arrTech = arrTech.sort();
+    for (let i in arrTech) {
+      arrTech[i] = { 
+      tech: arrTech[i],
+      name: nome,
+      } 
+    } 
+   return arrTech
+    
+  } else {
+    
+    return "Vazio!"
+  }
+
+ 
 }
+
+let teste10 = ['React', 'Jest', 'HTML', 'CSS', 'JavaScript']
+let nome = "luiz"
+
+console.log(techList(teste10,nome));
 
 module.exports = {
   calcArea,
