@@ -26,18 +26,38 @@ function concatName(arrayOrd) {
   let stringFinal = arrayOrd[arrayOrd.length -1] + ", "+ arrayOrd[0]
     return stringFinal
 }
-let arr = ["joao", "luiz"]
-console.log(concatName(arr));
+let arr = ["cap", "my" , "cap"]
+//console.log(concatName(arr));
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(vitorias, empates) {
+  let pontosTotais = vitorias*3 + empates*1
+  return pontosTotais
 }
+//console.log(footballPoints(14,8)); 
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+
+function highestCount(arrayNumeros) {
+
+  let maiorNum = arrayNumeros[0];
+  let numVezes = 1;
+  for (let i = 1; i < arrayNumeros.length; i += 1) {
+    if (maiorNum === arrayNumeros[i] ) {
+      
+      numVezes += 1
+    } else if (maiorNum < arrayNumeros[i] ) {
+      maiorNum = arrayNumeros[i] 
+      numVezes = 1
+    }
+    
+  }
+  return numVezes
 }
+
+let numbers = [1,2,2,5,10,11,3,11]
+console.log(highestCount(numbers));
+
 
 // Desafio 7
 function catAndMouse() {
