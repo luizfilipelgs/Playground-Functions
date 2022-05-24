@@ -36,6 +36,7 @@ function generatePhoneNumber(arrNumero) {
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
+  arrline = [lineA, lineB, lineC]
   if (
     Math.abs(lineA + lineB) > lineC 
     && Math.abs(lineB + lineC) > lineA 
@@ -48,10 +49,22 @@ function triangleCheck(lineA, lineB, lineC) {
     return true;
   } 
     return false; 
-  
-  
-
 }
+/*function triangleCheck(lineA, lineB, lineC) {
+  arrLine = [lineA, lineB, lineC]
+
+  for (let i = 0;i < arrLine.length;i+= 1) {
+
+    if (Math.abs(arrLine[i] + arrLine[i]) > arrLine[i]
+    && Math.abs(arrLine[i]- arrLine[i]) < arrLine[i]) {
+      return true
+    } else {
+      return false
+    }
+     
+  }
+}*/
+
 
 // Desafio 13
 function hydrate(pedidos) {
