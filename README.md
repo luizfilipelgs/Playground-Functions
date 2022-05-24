@@ -30,7 +30,7 @@
 - [x]  10 - Crie uma função de Lista de Tecnologias
 
 
-# Requisitos Bônus - 100%
+## Requisitos Bônus - 100%
 
 
 - [x]  11 - Crie uma função de número de telefone
