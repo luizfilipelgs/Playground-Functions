@@ -3,7 +3,7 @@
 
 ## O que foi desenvolvido 
 
-    Código de funções que resolvem problemas com respostas pré-determinadas. 
+   Código de funções que resolvem problemas com respostas pré-determinadas. 
 
 
 ## Requisitos - 100%
